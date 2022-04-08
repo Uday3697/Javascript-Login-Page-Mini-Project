@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: 2px solid green;
+            margin: 0 auto;
+            padding: 130px;
+            box-sizing: border-box;
+            background-color: lavender;
+        }
+        .watermarked{
+            position: relative;
+            left: 30px;
+            opacity: 0.5;
+        }
+    </style>
+    <body>
+        <center> <h1>Welcome To Login Page</h1> </center>
+        <hr>
+        <div>
+            Username: <br>
+            <input type="text" name="text" id="username">
+            <br> <br>
+            Password: <br>
+            <input type="password" name="text" id="password">
+            <br>
+            <br>
+            <button onclick="login()">Submit</button>
+        </div>
+        <script type="text/javascript">
+            function login(){
+                var uname=document.getElementById('username').value;
+                var pass=document.getElementById('password').value;
+                if (uname=="uday" && pass=="12345"){
+                    location.assign("./land.html");
+
+                }else{
+                    window.alert("Plz Enter A Valid User Name Or Password")
+                }
+            }
+        </script>
+    </body>
+
+</html>
